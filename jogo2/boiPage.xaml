@@ -32,7 +32,7 @@
         Grid.Row="0"/>
 
     <Image
-        Source="vaca.png"
+        x:Name="ImgVaca"
         VerticalOptions="Fill"
         Grid.RowSpan="10"
         Grid.Row="9"
@@ -62,7 +62,46 @@
         Grid.Column="0"
         Grid.ColumnSpan="1"/>
 
-    
+    <ImageButton Source="carne.png"
+            Clicked="Botaovaca"
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            BackgroundColor="#006600"
+            CornerRadius="25"/>
+
+    <ImageButton Source="agua.png"
+            Clicked="Vacasede"
+            Grid.Row="6"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            BackgroundColor="#006600"
+            CornerRadius="25"/>
+
+    <ImageButton Source="Felicidade.png"
+            Clicked="felizVaca"
+            Grid.Row="7"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            BackgroundColor="#006600"
+            CornerRadius="25"/>
+
+
+    <ProgressBar x:Name="botaofome"
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"/>
+
+    <ProgressBar x:Name="botaosede"
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"/>
+
+    <ProgressBar x:Name="botaofeliz"
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"/>
+
 
 
     </Grid>
