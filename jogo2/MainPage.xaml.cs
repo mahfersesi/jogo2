@@ -28,4 +28,9 @@ public partial class MainPage : ContentPage
 		cavalo.SetFeliz(cavalo.GetFeliz()+0.1);
 	}
 
+	void setacavalo(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new boiPage();
+	}
+
 }

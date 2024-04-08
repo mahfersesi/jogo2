@@ -6,9 +6,9 @@ public class Cavalo : paiclass
     public Cavalo()
     {
         Arquivo="cavalo.png";
-        Fome=0.5;
-        Sede=0.5;
-        Feliz=1.0;
+        Fome=0.1;
+        Sede=0.1;
+        Feliz=0.1;
     }
     
 }

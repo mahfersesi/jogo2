@@ -12,6 +12,10 @@ public class paiclass
     {
         return Arquivo;
     }
+    public string Getarquivo()
+    {
+        return arquivo;
+    }
 
     public paiclass()
 
