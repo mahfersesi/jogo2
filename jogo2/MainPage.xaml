@@ -39,6 +39,20 @@
         Grid.ColumnSpan="4"/>
 
     <Image
+        x:Name="ImgGalinha"
+        VerticalOptions="Fill"
+        Grid.RowSpan="10"
+        Grid.Row="9"
+        Grid.ColumnSpan="4"/>
+
+    <Image
+        x:Name="ImgBoi"
+        VerticalOptions="Fill"
+        Grid.RowSpan="10"
+        Grid.Row="9"
+        Grid.ColumnSpan="4"/>
+
+    <Image
         Source="fome.png"
         VerticalOptions="Fill"
         Grid.RowSpan="1"
@@ -78,10 +92,18 @@
             BackgroundColor="#006600"
             CornerRadius="25"/>
 
+    <ImageButton Source="felicidade.png"
+            Clicked="QuandoBotao"
+            Grid.Row="7"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            BackgroundColor="#006600"
+            CornerRadius="25"/>
+
     
     <ImageButton Source="seta.png"
             Clicked="setacavalo"
-            Grid.Row="8"
+            Grid.Row="4"
             Grid.Column="3"
             Grid.ColumnSpan="1"
             BackgroundColor="#006600"
@@ -98,7 +120,7 @@
                 Grid.Column="1"
                 Grid.ColumnSpan="2"/>
 
-    <ProgressBar x:Name="botaofeliz"
+    <ProgressBar x:Name="feliz"
                 Grid.Row="2"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"/>

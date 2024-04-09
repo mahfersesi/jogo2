@@ -1,6 +1,6 @@
 namespace jogo2;
 
-public class paiclass  
+public class Paiclass  
 {
     protected double Fome;
     protected double Sede;
@@ -12,17 +12,12 @@ public class paiclass
     {
         return Arquivo;
     }
-    public string Getarquivo()
-    {
-        return arquivo;
-    }
-
-    public paiclass()
+    public Paiclass()
 
 {
     Fome=10;
     Sede=10;
-    Feliz=5;
+    Feliz=10;
 }
     public void SetFome(double f)
 {

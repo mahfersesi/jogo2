@@ -1,6 +1,6 @@
 namespace jogo2;
 
-public class Cavalo : paiclass
+public class Cavalo : Paiclass
 {
     
     public Cavalo()
