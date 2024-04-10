@@ -15,9 +15,9 @@ public class Paiclass
     public Paiclass()
 
 {
-    Fome=10;
-    Sede=10;
-    Feliz=10;
+    Fome=0;
+    Sede=0;
+    Feliz=0;
 }
     public void SetFome(double f)
 {

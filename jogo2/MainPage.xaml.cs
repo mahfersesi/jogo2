@@ -12,11 +12,9 @@ public partial class MainPage : ContentPage
 		boi= new Boi();
 		galinha= new Galinha();
 
-		ImgBoi.Source= boi.GetArquivo();
+		atual = cavalo;
 
-		ImgGalinha.Source= galinha.GetArquivo();
-
-		ImgCavalo.Source= cavalo.GetArquivo();
+		ImgBoi.Source= atual.GetArquivo();
 	}
 
 	void QuandoOBotao(object sender, EventArgs args)
@@ -34,17 +32,23 @@ public partial class MainPage : ContentPage
 	void Botao(object sender, EventArgs args)
 	{
 		cavalo.SetFeliz(cavalo.GetFeliz()+0.1);
-		feliz.Progress=cavalo.GetFeliz();
+		felicidade.Progress=cavalo.GetFeliz();
 	}
 
 	void setacavalo(object sender, EventArgs args)
 	{
-		if (atual==cavalo)
-			atual=boi;
-		else if (atual==boi)
+		if (atual==boi)
+			atual=cavalo;
+		else if (atual==cavalo)
 			atual=galinha;
 		else if (atual==galinha)
-			atual=cavalo;
+			atual=boi;
+
+		ImgBoi.Source= atual.GetArquivo();
+		botaofome.Progress=atual.GetFome();
+		botaosede.Progress=atual.GetFome();
+		felicidade.Progress=atual.GetFome();
+
 		
 	}
 

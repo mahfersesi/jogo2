@@ -32,20 +32,6 @@
         Grid.Row="0"/>
 
     <Image
-        x:Name="ImgCavalo"
-        VerticalOptions="Fill"
-        Grid.RowSpan="10"
-        Grid.Row="9"
-        Grid.ColumnSpan="4"/>
-
-    <Image
-        x:Name="ImgGalinha"
-        VerticalOptions="Fill"
-        Grid.RowSpan="10"
-        Grid.Row="9"
-        Grid.ColumnSpan="4"/>
-
-    <Image
         x:Name="ImgBoi"
         VerticalOptions="Fill"
         Grid.RowSpan="10"
@@ -93,7 +79,7 @@
             CornerRadius="25"/>
 
     <ImageButton Source="felicidade.png"
-            Clicked="QuandoBotao"
+            Clicked="Botao"
             Grid.Row="7"
             Grid.Column="3"
             Grid.ColumnSpan="1"
@@ -120,7 +106,7 @@
                 Grid.Column="1"
                 Grid.ColumnSpan="2"/>
 
-    <ProgressBar x:Name="feliz"
+    <ProgressBar x:Name="felicidade"
                 Grid.Row="2"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"/>
