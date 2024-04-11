@@ -11,6 +11,7 @@
     <RowDefinition Height="60"/>
     <RowDefinition Height="*"/>
     <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
     <RowDefinition Height="50"/>
     <RowDefinition Height="60"/>
     <RowDefinition Height="50"/>
@@ -35,7 +36,7 @@
         x:Name="ImgBoi"
         VerticalOptions="Fill"
         Grid.RowSpan="10"
-        Grid.Row="9"
+        Grid.Row="10"
         Grid.ColumnSpan="4"/>
 
     <Image
@@ -64,7 +65,7 @@
 
     <ImageButton Source="carne.png"
             Clicked="QuandoOBotao"
-            Grid.Row="5"
+            Grid.Row="6"
             Grid.Column="3"
             Grid.ColumnSpan="1"
             BackgroundColor="#006600"
@@ -72,7 +73,7 @@
 
     <ImageButton Source="agua.png"
             Clicked="QuandoBotao"
-            Grid.Row="6"
+            Grid.Row="7"
             Grid.Column="3"
             Grid.ColumnSpan="1"
             BackgroundColor="#006600"
@@ -80,7 +81,7 @@
 
     <ImageButton Source="felicidade.png"
             Clicked="Botao"
-            Grid.Row="7"
+            Grid.Row="8"
             Grid.Column="3"
             Grid.ColumnSpan="1"
             BackgroundColor="#006600"
@@ -94,6 +95,15 @@
             Grid.ColumnSpan="1"
             BackgroundColor="#006600"
             CornerRadius="25"/>
+    
+    <ImageButton Source="setaa.png"
+            Clicked="setaacavalo"
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            BackgroundColor="#006600"
+            CornerRadius="25"/>
+
 
 
     <ProgressBar x:Name="botaofome"

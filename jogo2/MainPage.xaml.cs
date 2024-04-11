@@ -4,6 +4,8 @@ public partial class MainPage : ContentPage
 {
 	Cavalo cavalo; Boi boi; Galinha galinha; Paiclass atual;
 	Cavalo fome;
+	Cavalo sede;
+	Cavalo feliz;
 	public MainPage()
 	{
 		InitializeComponent();
@@ -51,5 +53,23 @@ public partial class MainPage : ContentPage
 
 		
 	}
+
+	void setaacavalo(object sender, EventArgs args)
+	{
+		if (atual==boi)
+			atual=galinha;
+		else if (atual==galinha)
+			atual=cavalo;
+		else if (atual==cavalo)
+			atual=boi;
+
+		ImgBoi.Source= atual.GetArquivo();
+		botaofome.Progress=atual.GetFome();
+		botaosede.Progress=atual.GetFome();
+		felicidade.Progress=atual.GetFome();
+
+		
+	}
+
 
 }
